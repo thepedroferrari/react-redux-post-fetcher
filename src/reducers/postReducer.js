@@ -1,6 +1,6 @@
 import { FETCH_POSTS, NEW_POST } from '../actions/types';
 
-const initalState = {
+const initialState = {
 	items: [],
 	item: {}
 };
