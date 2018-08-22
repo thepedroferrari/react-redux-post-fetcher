@@ -15,16 +15,15 @@ class Posts extends Component {
 	}
 	render() {
 		const postItems = this.props.posts.map((post) => (
-			<div key={post.id}>
+			<li key={post.id}>
 				<h3>{post.title}</h3>
 				<p>{post.body}</p>
-			</div>
+			</li>
 		));
 		return (
 			<div>
 				<h1>Posts</h1>
-				<div>here :)</div>
-				{postItems}
+				<ul>{postItems}</ul>
 			</div>
 		);
 	}
